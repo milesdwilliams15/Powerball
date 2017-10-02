@@ -1,6 +1,6 @@
 
 
-PB <- read.csv("C:/Users/Miles/Documents/UIUC/Fall 2017 Classes/Quant 1/Quant 1 Homework/Week 5 Homework/PB.csv")
+PB <- read.csv("https://raw.githubusercontent.com/milesdwilliams15/Powerball/master/PB.csv")
 PB$row <- 1:nrow(PB)
 PB2 <- within(PB[2:nrow(PB),], powN<-data.frame(do.call('rbind', strsplit(as.character(as.character(Draw.Date...WB1.WB2.WB3.WB4.WB5.PB..PP)), "  ", fixed=TRUE))))
 PB2 <- PB2[,-1]
